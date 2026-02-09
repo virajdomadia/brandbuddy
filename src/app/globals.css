@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+
+  --font-display: var(--font-oswald);
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --background: #030303;
+  --foreground: #ffffff;
+
+  /* Social Chaos Exact Colors */
+  --primary: #f36ba8;
+  /* The Pink Hero Background */
+  --secondary: #4f19eb;
+  /* The Purple Sidebar/Card Background */
+  --accent: #E9FF80;
+  /* The "Social Chaos" Yellow/Lime from Logo & Sidebar Button */
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 1px var(--primary);
+    color: transparent;
+  }
+
+  .text-outline-white {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
