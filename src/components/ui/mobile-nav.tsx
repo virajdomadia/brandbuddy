@@ -10,6 +10,7 @@ export function MobileNav() {
     const [isOpen, setIsOpen] = useState(false);
 
     const navLinks = [
+        { name: "Home", href: "/" },
         { name: "Services", href: "/services" },
         { name: "Work", href: "/work" },
         { name: "About", href: "/about" },

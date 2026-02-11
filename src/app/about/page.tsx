@@ -51,7 +51,7 @@ export default function AboutPage() {
                     <h2 className="text-4xl font-display uppercase mb-6">The Anti-Agency</h2>
                     <div className="space-y-6 text-black/80 text-lg leading-relaxed font-medium">
                         <p>
-                            We started BrandBaby because we were tired of "safe". Safe design, safe code, safe marketing. Safe doesn't stop scrolling. Safe doesn't go viral.
+                            We started BrandsBuddy because we were tired of "safe". Safe design, safe code, safe marketing. Safe doesn't stop scrolling. Safe doesn't go viral.
                         </p>
                         <p>
                             We exist to disrupt. To take brands from "blending in" to "impossible to ignore". We combine bleeding-edge technology with raw, unfiltered creativity.

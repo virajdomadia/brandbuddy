@@ -7,6 +7,7 @@ import Link from "next/link";
 
 export function Sidebar({ className }: { className?: string }) {
     const links = [
+        { name: "Home", href: "/" },
         { name: "Services", href: "/services" },
         { name: "Work", href: "/work" },
         { name: "About", href: "/about" },

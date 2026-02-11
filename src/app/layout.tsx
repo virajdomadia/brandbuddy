@@ -17,7 +17,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: "BrandBaby | Digital Marketing Agency",
+  title: "BrandsBuddy | Digital Marketing Agency",
   description: "We don't just build brands, we raise them.",
 };
 

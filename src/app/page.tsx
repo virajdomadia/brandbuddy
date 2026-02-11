@@ -85,7 +85,7 @@ export default function Home() {
             <div className="mt-12 flex flex-col gap-4">
               <div className="flex items-center gap-4 text-zinc-300">
                 <span className="w-8 h-8 rounded-full bg-zinc-800 flex items-center justify-center text-accent">@</span>
-                hello@brandbaby.com
+                thebrandsbuddy@gmail.com
               </div>
             </div>
           </div>
