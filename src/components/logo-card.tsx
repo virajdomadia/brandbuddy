@@ -20,7 +20,7 @@ export function LogoCard({ className }: { className?: string }) {
                                 (row + col) % 5 === 0 ? "text-primary" :
                                     (row * col) % 4 === 0 ? "text-accent" : "text-zinc-800"
                             )}>
-                                BRAND<br />BABY
+                                BRANDS<br />BUDDY
                             </span>
                         </div>
                     ))
@@ -30,7 +30,7 @@ export function LogoCard({ className }: { className?: string }) {
             {/* Center Piece */}
             <div className="z-10 bg-black/80 backdrop-blur-sm p-6 rounded-2xl border border-zinc-800 rotate-[-5deg] hover:rotate-0 transition-transform duration-300">
                 <span className="font-display font-bold text-5xl uppercase leading-[0.85] text-white">
-                    BRAND<br />BABY
+                    BRANDS<br />BUDDY
                     <span className="w-3 h-3 bg-accent rounded-full ml-1 inline-block" />
                 </span>
             </div>

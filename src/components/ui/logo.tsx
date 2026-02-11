@@ -9,8 +9,8 @@ export function Logo({ className, size = "default" }: { className?: string; size
 
     return (
         <div className={cn("font-display font-bold tracking-tighter leading-[0.85] select-none flex flex-col", sizeClasses[size], className)}>
-            <span>BRAND</span>
-            <span>BABY</span>
+            <span>BRANDS</span>
+            <span>BUDDY</span>
             <div className="w-3 h-3 bg-accent rounded-full mt-1 ml-1 inline-block" />
         </div>
     );
