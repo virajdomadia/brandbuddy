@@ -82,7 +82,7 @@ export function ContactForm() {
                 />
             </div>
             <Input
-                placeholder="What are we building?"
+                placeholder="Tell us about your project"
                 focused={focused}
                 setFocused={setFocused}
                 name="project"
@@ -94,7 +94,7 @@ export function ContactForm() {
             <div className="relative">
                 <textarea
                     name="message"
-                    placeholder="Tell us about the chaos you want to create..."
+                    placeholder="How can we help your business grow?"
                     className="w-full bg-zinc-900 border-2 border-zinc-700 rounded-lg px-4 py-4 text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary focus:bg-zinc-800 transition-all resize-none h-32"
                     onFocus={() => setFocused("message")}
                     onBlur={() => setFocused(null)}
@@ -130,7 +130,7 @@ export function ContactForm() {
                 className={`bg-accent text-black font-display font-bold text-xl uppercase py-4 rounded-sm flex items-center justify-center gap-2 hover:bg-white transition-colors mt-4 group ${status === "loading" ? "opacity-50 cursor-not-allowed" : ""
                     }`}
             >
-                {status === "loading" ? "Sending..." : "Send It"}
+                {status === "loading" ? "Sending..." : "START A CONVERSATION"}
                 <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </motion.button>
         </form>

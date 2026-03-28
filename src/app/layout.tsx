@@ -1,25 +1,54 @@
 import type { Metadata } from "next";
-import { Inter, Oswald } from "next/font/google"; // Using Oswald for that condensed, bold look
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import { Sidebar } from "@/components/ui/sidebar";
-
-import { MobileNav } from "@/components/ui/mobile-nav";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const oswald = Oswald({
-  variable: "--font-oswald",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "BrandsBuddy | Digital Marketing Agency",
-  description: "We don't just build brands, we raise them.",
+  metadataBase: new URL("https://thebrandsbuddy.com"),
+  title: {
+    default: "BrandsBuddy | Branding, Web & Marketing Studio",
+    template: "%s | BrandsBuddy"
+  },
+  description: "BrandsBuddy is a dedicated branding, web, and marketing studio helping founders build brands people love. Honest advice, no-jargon strategy, and results that actually scale.",
+  keywords: ["branding agency", "web design studio", "growth marketing", "digital marketing for startups", "nextjs development", "marketing agency"],
+  authors: [{ name: "BrandsBuddy" }],
+  creator: "BrandsBuddy",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://thebrandsbuddy.com",
+    siteName: "BrandsBuddy",
+    title: "BrandsBuddy | Branding, Web & Marketing Studio",
+    description: "BrandsBuddy is a dedicated branding, web, and marketing studio helping founders build brands people love. Honest advice, no-jargon strategy, and results that actually scale.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "BrandsBuddy Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BrandsBuddy | Branding, Web & Marketing Studio",
+    description: "BrandsBuddy is a dedicated branding, web, and marketing studio helping founders build brands people love. Honest advice, no-jargon strategy, and results that actually scale.",
+    images: ["/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
+
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { ContactModal } from "@/components/ContactModal";
 
 export default function RootLayout({
   children,
@@ -28,25 +57,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          inter.variable,
-          oswald.variable,
-          "antialiased bg-background text-foreground min-h-screen font-sans overflow-x-hidden"
-        )}
-      >
-        <MobileNav />
-        <div className="flex min-h-screen bg-black">
-          {/* Sidebar - Fixed on Desktop */}
-          <div className="w-auto hidden md:block">
-            <Sidebar />
-          </div>
-
-          {/* Main Content Area */}
-          <main className="flex-1 w-full bg-black relative">
-            {children}
-          </main>
-        </div>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+        <ContactModal />
       </body>
     </html>
   );
