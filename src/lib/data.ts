@@ -134,6 +134,34 @@ export const packages = [
     cta: "GET A QUOTE",
     primary: false,
   },
+  {
+    icon: "🌱",
+    name: "STARTER GROWTH PLAN",
+    desc: "Essential content and account management to kickstart your brand's digital presence.",
+    features: [
+      "5 high-engagement reels (mobile production)",
+      "5 branded static creatives",
+      "Monthly analytics & insights",
+      "Full account management",
+      "Investment: ₹30,625 / month"
+    ],
+    cta: "GET STARTED",
+    primary: false,
+  },
+  {
+    icon: "⭐",
+    name: "PREMIUM GROWTH PLAN",
+    desc: "Professional-grade content production and campaign optimization for aggressive scaling.",
+    features: [
+      "5 professionally shot reels (camera production)",
+      "5 creatives designed for paid campaigns",
+      "Monthly analytics & insights",
+      "Full account management",
+      "Investment: ₹41,250 / month"
+    ],
+    cta: "SCALE MY BRAND",
+    primary: true,
+  }
 ];
 
 /* ─────── FAQ DATA ─────── */
