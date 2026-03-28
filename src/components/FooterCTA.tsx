@@ -1,27 +1,39 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { RevealOnScroll } from "./ui/RevealOnScroll";
+
 export function FooterCTA() {
   return (
-    <section className="footer-cta">
-      <div>
-        <div className="footer-headline">
-          <span className="line">READY TO</span>
-          <span className="line highlight">BUILD</span>
-          <span className="line">SOMETHING</span>
-          <span className="line serif">worth showing?</span>
-        </div>
-        <p className="footer-desc">
-          Free 30-minute strategy call. We&apos;ll learn about your business, share
-          honest thinking, and tell you straight whether we&apos;re the right fit
-          for each other.
+    <section className="footer-cta overflow-hidden">
+      <RevealOnScroll className="f-cta-content" y={40}>
+        <h2 className="f-cta-title">
+          <span className="line">LET'S GROW</span>
+          <span className="line serif">together.</span>
+        </h2>
+        <p className="f-cta-desc">
+          Ready to take your brand to the next level? We're a friendly, 
+          dedicated team that actually cares about your success. Let's talk 
+          about what you're building and how we can help.
         </p>
-      </div>
-      <div className="footer-right">
-        <a href="#" className="btn-book-call">
-          BOOK FREE CALL →
-        </a>
-        <span className="footer-reassurance">
-          NO PITCH · NO PRESSURE · JUST CLARITY
-        </span>
-      </div>
+        <div className="f-cta-btns">
+          <motion.a 
+            whileHover={{ scale: 1.05, y: -5 }}
+            whileTap={{ scale: 0.98 }}
+            href="#contact" 
+            className="btn-cta-primary brutalist-shadow-lime"
+          >
+            CLAIM YOUR SPOT ↓
+          </motion.a>
+          <motion.a 
+            whileHover={{ x: 10 }}
+            href="#" 
+            className="btn-cta-outline"
+          >
+            HOW WE WORK →
+          </motion.a>
+        </div>
+      </RevealOnScroll>
     </section>
   );
 }

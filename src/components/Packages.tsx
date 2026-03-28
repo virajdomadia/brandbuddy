@@ -33,7 +33,7 @@ export function Packages() {
               ))}
             </ul>
             <a
-              href="#"
+              href="#contact"
               className={`btn-package ${pkg.primary ? "primary" : ""}`}
             >
               {pkg.cta}

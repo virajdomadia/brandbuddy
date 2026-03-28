@@ -6,26 +6,25 @@ export function Mission() {
       <div className="mission-grid">
         <div className="mission-left">
           <div className="section-title">
-            <span className="line">NEW STUDIO.</span>
-            <span className="line serif">Real people.</span>
-            <span className="line">ZERO FLUFF.</span>
+            <span className="line">WE DO</span>
+            <span className="line serif">things a bit</span>
+            <span className="line">DIFFERENTLY.</span>
           </div>
           <p className="mission-text">
-            We built BrandsBuddy because we were tired of agencies that
-            overpromise, hide metrics, and treat clients like ticket numbers.
-            We do this differently — with honesty, craft, and real
-            accountability.
+            BrandsBuddy was started with a simple idea: that building a brand should be 
+            an exciting journey, not a stressful one. We're here to provide the expertise 
+            and support you need to turn your vision into a reality.
           </p>
           <a href="#" className="btn-conversation">
-            START A CONVERSATION →
+            START A CHAT ↓
           </a>
 
           <div className="founding-offer">
-            <h4>🎁 FOUNDING CLIENT OFFER</h4>
+            <h4>🎁 BECOME A FOUNDING PARTNER</h4>
             <p>
-              Our first clients get locked-in founding pricing, direct team
-              access, and our full focus as we build our portfolio together.
-              This won&apos;t last long.
+              We are currently looking for five ambitious founders to join us as founding clients. 
+              In return for your trust, you'll get discounted lifetime pricing, direct access to 
+              us, and our full focus as we help you build a brand that stands out.
             </p>
           </div>
         </div>
