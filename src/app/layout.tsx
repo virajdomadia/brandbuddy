@@ -1,24 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Oswald } from "next/font/google"; // Using Oswald for that condensed, bold look
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import { Sidebar } from "@/components/ui/sidebar";
-
-import { MobileNav } from "@/components/ui/mobile-nav";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const oswald = Oswald({
-  variable: "--font-oswald",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "BrandsBuddy | Digital Marketing Agency",
-  description: "We don't just build brands, we raise them.",
+  title: "BrandsBuddy | Marketing & Web Studio",
+  description:
+    "BrandsBuddy is a full-service studio combining strategic marketing with sharp web development. We build brands that are impossible to ignore.",
 };
 
 export default function RootLayout({
@@ -28,26 +14,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          inter.variable,
-          oswald.variable,
-          "antialiased bg-background text-foreground min-h-screen font-sans overflow-x-hidden"
-        )}
-      >
-        <MobileNav />
-        <div className="flex min-h-screen bg-black">
-          {/* Sidebar - Fixed on Desktop */}
-          <div className="w-auto hidden md:block">
-            <Sidebar />
-          </div>
-
-          {/* Main Content Area */}
-          <main className="flex-1 w-full bg-black relative">
-            {children}
-          </main>
-        </div>
-      </body>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
