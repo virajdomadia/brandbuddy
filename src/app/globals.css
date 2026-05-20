@@ -142,9 +142,17 @@ body {
   }
 }
 
+.site-nav .nav-links {
+  flex: 1;
+  height: 100%;
+  align-items: stretch;
+}
+
 .site-nav .nav-links a {
   flex: 1;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: var(--ink);
   font-family: var(--font-body);
