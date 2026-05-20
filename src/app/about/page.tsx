@@ -83,7 +83,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Viraj Domadia */}
-                <div className="profile-row group">
+                {/* <div className="profile-row group">
                     <div className="profile-name-block bg-ink text-white">
                         <div className="vertical-label mb-8 text-white/30">CO-FOUNDER</div>
                         <h2 className="profile-name">
@@ -108,7 +108,7 @@ export default function AboutPage() {
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
 
             {/* FULL BLEED CTA */}
